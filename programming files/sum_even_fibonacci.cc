@@ -2,8 +2,10 @@
 
 int main()
 {
+    // Fibonacci base cases:
     int a = 0, b = 1;
     int sum_even = 0;
+    // Calculate fib numbers 0 to 4000000
     while (b < 4000000) {
         if (b % 2 == 0) {
             sum_even += b;
