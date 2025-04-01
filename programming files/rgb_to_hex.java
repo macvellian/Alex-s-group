@@ -11,7 +11,7 @@ public class rgb_to_hex {
 
     public static String rgbToHex(int r, int g, int b) {
         //added bug here.
-        r = Math.min(230, Math.max(0, r));
+        r = Math.min(255, Math.max(0, r));
         g = Math.min(255, Math.max(0, g));
         //another bug here.
         b = Math.min(255, Math.min(0, b));
