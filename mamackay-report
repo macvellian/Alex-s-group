@@ -1,0 +1,29 @@
+Description: Cannot parse a date-time string into LocalDateTime object using DateTimeFormatter
+
+Steps to Reproduce
+
+First step to reproduce the issue/bug: run the provided Java program with the input string "2022-03-17 10:45:30".
+Second step to reproduce the issue/bug: see if an exception is thrown at the LocalDateTime.parse() line
+
+  Expected Behavior A clear and concise description of what you expected to happen: 
+The program should successfully parse the date-time string and output it in the format MM/dd/yyyy HH:mm:ss
+
+Actual Behavior A clear and concise description of what actually happened.: If the input string format is incorrect 
+  or contains unexpected characters, LocalDateTime.parse() throws an exception.
+  
+
+Additional Information
+
+Operating System: 
+Browser: MacOS
+Version: 14.3.1
+Possible Solution If you have any suggestions for a possible solution, please include them here:  
+Use a try-catch block to handle DateTimeParseException.
+  Ensure the input string strictly follows the required format.
+  
+
+Priority How critical is this issue/bug? Low, medium, or high priority?   Probably medium
+
+Reproducibility How often can this issue/bug be reproduced? Always, sometimes, or random?: Always
+
+Impact What is the impact of this issue/bug? Low, medium, or high?: Likely medium. Things can crash due to this problem
